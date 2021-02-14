@@ -1,15 +1,32 @@
-.button {
-	width: 30%;
+.imageFormBox {
+	display: grid;
+	grid-template-columns: 400px 100px;
+	justify-content: center;
+	grid-template-rows: 50px 50px;
+	grid-template-areas: "insertImage insertImage" "textBox button";
+}
+
+.insertImage {
+	font-size: 20px;
+	align-self: center;
+	grid-area: insertImage;
 }
 
 .textBox {
-	width: 70%;
+	grid-area: textBox;
+	border: 2px solid white;
 }
 
-.imageFormBox {
-	width: 700px;
+.button {
+	grid-area: button;
+	transition-duration: 0.2s;
+	cursor: pointer;
+	background-color: #51bdd6;
+	color: black;
+	border: 2px solid white;
 }
 
-p {
-	text-align: center;
+.button:hover {
+	background-color: #51bdd6;
+	color: white;
 }

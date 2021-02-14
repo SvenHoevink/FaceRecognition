@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react';
 import React from 'react';
 import logo from './logo.jpg';
 import Tilt from 'react-tilt';
@@ -8,7 +7,7 @@ const Logo = () => {
 	return (
 		<div className="imageBox">
 			<Tilt className="Tilt" options={{ max: 25 }} style={{ height: 150, width: 150 }}>
-				<img src={logo} className="picture" />
+				<img alt="logo" src={logo} className="picture" />
 			</Tilt>
 		</div>
 	);

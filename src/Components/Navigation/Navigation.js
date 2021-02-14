@@ -5,7 +5,7 @@ const Navigation = () => {
 	return (
 		<nav style={{ display: 'flex', justifyContent: 'flex-end' }}>
 			<div>
-				<p>Sign out</p>
+				<p className="signOut">Sign out</p>
 			</div>
 		</nav>
 	);
